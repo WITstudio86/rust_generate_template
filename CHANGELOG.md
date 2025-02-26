@@ -5,6 +5,10 @@
 ---
 ## [未发布]
 
+### Document
+
+- add preparatory - ([3684b48](https://github.com/WITstudio86/rust_generate_template/commit/3684b48afb4fb25d47e023455e7008838fda505a)) - WITstudio
+
 ### Fix bug
 
 - new commit include new changelog - ([df301d8](https://github.com/WITstudio86/rust_generate_template/commit/df301d8753fdd346f8a0652e410f4f27c5c53f3f)) - WITstudio
