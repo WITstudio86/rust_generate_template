@@ -3,6 +3,13 @@
 所有显著的变化将记录在此文件中。请参阅 [常规提交](https://www.conventionalcommits.org/) 规范以了解提交指南。
 
 ---
+## [0.1.5](https://github.com/WITstudio86/rust_generate_template/compare/v0.1.4..v0.1.5) - 2025-02-26
+
+### Feat
+
+- add github workflows - ([af3197e](https://github.com/WITstudio86/rust_generate_template/commit/af3197eec93f11ba0cc289e66f19d977a524a8c9)) - WITstudio
+
+---
 ## [0.1.4](https://github.com/WITstudio86/rust_generate_template/compare/v0.1.3..v0.1.4) - 2025-02-26
 
 ### Feat
