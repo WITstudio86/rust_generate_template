@@ -53,6 +53,12 @@ command = "git"
 args = ["cliff" , "-o" , "CHANGELOG.md"]
 dependencies = ["gitcommit"]
 
+# 确保 changelog 被包含在提交中
+[tasks.addchange]
+command="git"
+args=["commit" , "-a" , "-m" , "\"[skip] update changelog\""]
+dependencies = ["cliff"]
+
 # 前面那些事情
 [tasks.commit]
 dependencies = [
@@ -63,6 +69,7 @@ dependencies = [
     "clippy",
     "test",
     "gitcommit",
-    "cliff"
+    "cliff",
+    "addchange"
 ]
 
