@@ -8,6 +8,7 @@
 ### Document
 
 - add readme - ([801aa14](https://github.com/WITstudio86/rust_generate_template/commit/801aa1412a9f5f5ddfbb6c9faa226a341d23a7f9)) - WITstudio
+- add run - ([2b48b62](https://github.com/WITstudio86/rust_generate_template/commit/2b48b621f6c6e991185ca9b55330bcad59c6c97a)) - WITstudio
 
 ### Feat
 
