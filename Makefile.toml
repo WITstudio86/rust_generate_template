@@ -8,6 +8,7 @@ args = ["fmt", "--", "--emit=files"]
 install_crate="cargo-deny"
 command = "cargo"
 args = ["deny" , "check"]
+dependencies = ["format"]
 
 # 拼写检查
 [tasks.typos]
@@ -43,16 +44,22 @@ dependencies = ["test"]
 
 # 提交并添加 command 信息
 [tasks.gitcommit]
+command = "git"
+args = ["commit", "-a"]
+# dependencies = ["add"]
+
+# 获取版本号并添加标签
+[tasks.addtag]
 command = "bash"
-args = ["-c", "git diff --quiet || git commit -a "]
-dependencies = ["add"]
+args = ["-c", "version=$(cargo pkgid | sed -n 's/.*#//p'); git tag v$version"]
+# dependencies = ["gitcommit"]
 
 # 根据提交信息生成changelog
 [tasks.cliff]
 install_crate="git-cliff"
 command = "git"
 args = ["cliff" , "-o" , "CHANGELOG.md"]
-dependencies = ["gitcommit"]
+# dependencies = ["gitcommit"]
 
 # 确保 changelog 被包含在提交中
 [tasks.addchange]
@@ -60,17 +67,26 @@ command="git"
 args=["commit" , "-a" , "-m" , "\"[skip] update changelog\""]
 dependencies = ["cliff"]
 
-# 前面那些事情
+#  检查之后执行 commit
 [tasks.commit]
 dependencies = [
-    "format",
-    "deny",
-    "typos",
-    "check",
-    "clippy",
-    "test",
+    "add",
     "gitcommit",
-    "cliff",
     "addchange"
 ]
 
+# 根据 cargotoml 添加 tag
+[tasks.tag]
+dependencies = [
+    "addtag",
+    "addchange"
+]
+
+# 全部执行 
+[tasks.all]
+dependencies = [
+    "add",
+    "gitcommit",
+    "addtag",
+    "addchange"
+]
