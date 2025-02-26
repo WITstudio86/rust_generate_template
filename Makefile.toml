@@ -1,0 +1,68 @@
+# 格式化代码 ， 风格统一 
+[tasks.format]
+command = "cargo"
+args = ["fmt", "--", "--emit=files"]
+
+# 依赖检查 
+[tasks.deny]
+install_crate="cargo-deny"
+command = "cargo"
+args = ["deny" , "check"]
+
+# 拼写检查
+[tasks.typos]
+install_crate="typos-cli"
+command = "typos"
+dependencies = ["deny"]
+
+# 编译检查
+[tasks.check]
+command = "cargo"
+args = ["check" , "--all"]
+dependencies = ["typos"]
+
+# 代码风格检查
+[tasks.clippy]# 一种代码风格检查工具
+command = "cargo"
+args = ["clippy" , "--all-features" , "--tests" , "--benches" , "--", "-D" , "warnings"]
+dependencies = ["check"]
+
+# 运行单元测试
+[tasks.test]
+install_crate="cargo-nextest"
+command = "cargo"
+args = ["nextest" , "run"]
+dependencies = ["clippy"]
+
+# 讲更改文件加入到 git
+[tasks.add]
+command="git"
+args=["add" , "."]
+dependencies = ["test"]
+
+# 提交并添加 command 信息
+[tasks.commit]
+command = "git"
+args = ["commit" , "-a"]
+dependencies = ["add"]
+
+# 根据提交信息生成changelog
+[tasks.cliff]
+install_crate="git-cliff"
+command = "git"
+args = ["cliff" , "-o" , "CHANGELOG.md"]
+dependencies = ["commit"]
+
+# 前面那些事情
+[tasks.push]
+dependencies = [
+    "format",
+    "deny",
+    "typos",
+    "check",
+    "clippy",
+    "test",
+    "commit",
+    "cliff"
+]
+
