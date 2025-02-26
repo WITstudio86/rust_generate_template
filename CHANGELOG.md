@@ -3,6 +3,15 @@
 所有显著的变化将记录在此文件中。请参阅 [常规提交](https://www.conventionalcommits.org/) 规范以了解提交指南。
 
 ---
+## [0.1.4](https://github.com/WITstudio86/rust_generate_template/compare/v0.1.3..v0.1.4) - 2025-02-26
+
+### Feat
+
+- feat: cargo make commit -> cargo make commit
+                        -> cargo make tag
+                        -> cargo make all - ([eb0810a](https://github.com/WITstudio86/rust_generate_template/commit/eb0810a92e00e1a155b557f55c6865c03e8b30eb)) - WITstudio
+
+---
 ## [0.1.3](https://github.com/WITstudio86/rust_generate_template/compare/v0.1.2..v0.1.3) - 2025-02-26
 
 ### Fix bug
