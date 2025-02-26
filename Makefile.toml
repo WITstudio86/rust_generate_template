@@ -72,7 +72,6 @@ dependencies = ["cliff"]
 dependencies = [
     "add",
     "gitcommit",
-    "addchange"
 ]
 
 # 根据 cargotoml 添加 tag
