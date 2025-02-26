@@ -18,4 +18,6 @@ $ cargo install cargo-make
 
 - replace your repo url in `Cargo.toml` line 56 
 
-- run : `cargo make commit` 
+- run : `cargo make commit` auto check code and addd commit
+- run : `cargo make tag` auto add git-tag use version table in Cargo.toml
+- run : `cargo make all` commit + tag
