@@ -38,7 +38,7 @@ dependencies = ["clippy"]
 [tasks.add]
 command="git"
 args=["add" , "."]
-dependencies = ["test"]
+# dependencies = ["test"]
 
 # 提交并添加 command 信息
 [tasks.commit]
