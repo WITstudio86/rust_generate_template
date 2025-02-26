@@ -1,5 +1,11 @@
 # Rust Generate Template
 
+## preparatory
+
+```shell
+$ cargo install cargo-generate
+```
+
 ## use
 
 - first , install cargo make
