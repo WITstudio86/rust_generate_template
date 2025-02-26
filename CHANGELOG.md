@@ -5,6 +5,13 @@
 ---
 ## [未发布]
 
+### Others
+
+- add tag - ([ddbb549](https://github.com/WITstudio86/rust_generate_template/commit/ddbb5499e76f2811cf58ea878fb9a3a90aacb811)) - WITstudio
+
+---
+## [0.1.1] - 2025-02-26
+
 ### Document
 
 - add readme - ([801aa14](https://github.com/WITstudio86/rust_generate_template/commit/801aa1412a9f5f5ddfbb6c9faa226a341d23a7f9)) - WITstudio
