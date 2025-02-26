@@ -5,6 +5,10 @@
 ---
 ## [未发布]
 
+### Fix bug
+
+- new commit include new changelog - ([df301d8](https://github.com/WITstudio86/rust_generate_template/commit/df301d8753fdd346f8a0652e410f4f27c5c53f3f)) - WITstudio
+
 ### Others
 
 - add tag - ([ddbb549](https://github.com/WITstudio86/rust_generate_template/commit/ddbb5499e76f2811cf58ea878fb9a3a90aacb811)) - WITstudio
