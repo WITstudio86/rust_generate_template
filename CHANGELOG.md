@@ -8,6 +8,7 @@
 ### Others
 
 - add tag - ([ddbb549](https://github.com/WITstudio86/rust_generate_template/commit/ddbb5499e76f2811cf58ea878fb9a3a90aacb811)) - WITstudio
+- update changelog - ([d235dd5](https://github.com/WITstudio86/rust_generate_template/commit/d235dd5e9f22688bf7d6c210e88b9522e9d031c9)) - WITstudio
 
 ---
 ## [0.1.1] - 2025-02-26
