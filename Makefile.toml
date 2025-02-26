@@ -43,8 +43,8 @@ dependencies = ["test"]
 
 # 提交并添加 command 信息
 [tasks.gitcommit]
-command = "git"
-args = ["commit" , "-a"]
+command = "bash"
+args = ["-c", "git diff --quiet || git commit -a "]
 dependencies = ["add"]
 
 # 根据提交信息生成changelog
