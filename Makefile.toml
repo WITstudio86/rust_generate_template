@@ -35,11 +35,11 @@ command = "cargo"
 args = ["nextest" , "run" , "--no-tests=pass"]
 dependencies = ["clippy"]
 
-# 讲更改文件加入到 git
+# 更改文件加入到 git
 [tasks.add]
 command="git"
 args=["add" , "."]
-# dependencies = ["test"]
+dependencies = ["test"]
 
 # 提交并添加 command 信息
 [tasks.gitcommit]
