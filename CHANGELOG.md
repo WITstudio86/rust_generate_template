@@ -5,6 +5,13 @@
 ---
 ## [未发布]
 
+### Fix bug
+
+- fix : add no test action -- pass - ([ac3d667](https://github.com/WITstudio86/rust_generate_template/commit/ac3d667d49c27c64cc4dd74f3e49ad26390105fd)) - WITstudio
+
+---
+## [0.1.2](https://github.com/WITstudio86/rust_generate_template/compare/v0.1.1..v0.1.2) - 2025-02-26
+
 ### Document
 
 - add preparatory - ([3684b48](https://github.com/WITstudio86/rust_generate_template/commit/3684b48afb4fb25d47e023455e7008838fda505a)) - WITstudio
