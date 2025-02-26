@@ -31,7 +31,8 @@ dependencies = ["check"]
 [tasks.test]
 install_crate="cargo-nextest"
 command = "cargo"
-args = ["nextest" , "run"]
+# 允许不存在单元测试 
+args = ["nextest" , "run" , "--no-tests=pass"]
 dependencies = ["clippy"]
 
 # 讲更改文件加入到 git
