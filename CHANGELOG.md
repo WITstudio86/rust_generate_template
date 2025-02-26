@@ -1,0 +1,16 @@
+# 更新日志
+
+所有显著的变化将记录在此文件中。请参阅 [常规提交](https://www.conventionalcommits.org/) 规范以了解提交指南。
+
+---
+## [未发布]
+
+### Document
+
+- add readme - ([801aa14](https://github.com/WITstudio86/rust_generate_template/commit/801aa1412a9f5f5ddfbb6c9faa226a341d23a7f9)) - WITstudio
+
+### Feat
+
+- add tools : cargo_deny , typos , nextest , cliff , - ([7ebbd6b](https://github.com/WITstudio86/rust_generate_template/commit/7ebbd6bc63ca10ed270ed88067ef74bf23f6495d)) - WITstudio
+
+<!-- 由 git-cliff 生成 -->

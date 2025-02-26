@@ -41,7 +41,7 @@ args=["add" , "."]
 # dependencies = ["test"]
 
 # 提交并添加 command 信息
-[tasks.commit]
+[tasks.gitcommit]
 command = "git"
 args = ["commit" , "-a"]
 dependencies = ["add"]
@@ -51,10 +51,10 @@ dependencies = ["add"]
 install_crate="git-cliff"
 command = "git"
 args = ["cliff" , "-o" , "CHANGELOG.md"]
-dependencies = ["commit"]
+dependencies = ["gitcommit"]
 
 # 前面那些事情
-[tasks.push]
+[tasks.commit]
 dependencies = [
     "format",
     "deny",
@@ -62,7 +62,7 @@ dependencies = [
     "check",
     "clippy",
     "test",
-    "commit",
+    "gitcommit",
     "cliff"
 ]
 
