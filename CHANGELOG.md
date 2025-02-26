@@ -13,4 +13,8 @@
 
 - add tools : cargo_deny , typos , nextest , cliff , - ([7ebbd6b](https://github.com/WITstudio86/rust_generate_template/commit/7ebbd6bc63ca10ed270ed88067ef74bf23f6495d)) - WITstudio
 
+### Fix bug
+
+- rename cargo make takes name - ([9ad646c](https://github.com/WITstudio86/rust_generate_template/commit/9ad646ce23ee6c010de5e6a359f09a884a3e8cdb)) - WITstudio
+
 <!-- 由 git-cliff 生成 -->
