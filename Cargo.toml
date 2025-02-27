@@ -1,6 +1,6 @@
 [package]
 name = "cargo_generate_template"
-version = "0.1.5"
+version = "0.3.2"
 edition = "2021"
 license = "MIT"
 
@@ -114,3 +114,9 @@ topo_order = false
 sort_commits = "oldest"
 # 限制在 Changelog 中包含的提交数量
 # limit_commits = 42
+
+# cargo release use git cliff
+# use hook update changelog before push
+[package.metadata.release]
+pre-release-hook = ["git", "cliff", "-o", "CHANGELOG.md"]
+
