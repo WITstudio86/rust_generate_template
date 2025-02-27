@@ -114,3 +114,9 @@ topo_order = false
 sort_commits = "oldest"
 # 限制在 Changelog 中包含的提交数量
 # limit_commits = 42
+
+# cargo release use git cliff
+# use hook update changelog before push
+[package.metadata.release]
+pre-release-hook = "git cliff -o CHANGELOG.md"
+

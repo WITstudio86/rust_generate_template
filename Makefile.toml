@@ -40,7 +40,6 @@ dependencies = ["clippy"]
 [tasks.add]
 command="git"
 args=["add" , "."]
-# dependencies = ["test"]
 
 # 提交并添加 command 信息
 [tasks.gitcommit]
@@ -53,7 +52,6 @@ dependencies = ["add"]
 install_crate="git-cliff"
 command = "git"
 args = ["cliff" , "-o" , "CHANGELOG.md"]
-# dependencies = ["gitcommit"]
 
 # 确保 changelog 被包含在提交中
 [tasks.addchange]
@@ -61,14 +59,13 @@ command="git"
 args=["commit" , "-a" , "-m" , "\"[skip] update changelog\""]
 dependencies = ["cliff"]
 
-#  检查之后执行 commit
+# 检查之后执行 commit
 [tasks.commit]
 dependencies = [
     "add",
     "gitcommit",
     "addchange"
 ]
-
 
 # cargo release
 # 小版本发布 
@@ -77,13 +74,15 @@ install_crate="cargo-release"
 command = "cargo"
 args = ["release" , "patch" , "--no-publish", "--execute"]
 # dependencies = ["gitcommit"]
+
 # 中版本发布 
 [tasks.minor]
 install_crate="cargo-release"
 command = "cargo"
 args = ["release" , "minor" , "--no-publish", "--execute"]
 # dependencies = ["gitcommit"]
-# 大版本发布 
+
+# 大版本发布
 [tasks.major]
 install_crate="cargo-release"
 command = "cargo"
