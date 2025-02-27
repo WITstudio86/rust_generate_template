@@ -7,6 +7,13 @@
 
 ### Fix bug
 
+- 修复 execute tests error - ([e5cdcc1](https://github.com/WITstudio86/rust_generate_template/commit/e5cdcc1f9d9e6d75a94cdcbbf1fce9aee91e7e94)) - WITstudio
+
+---
+## [0.3.1](https://github.com/WITstudio86/rust_generate_template/compare/v0.3.0..v0.3.1) - 2025-02-27
+
+### Fix bug
+
 - 避免 github worklflow error with test - ([601e746](https://github.com/WITstudio86/rust_generate_template/commit/601e7469942ea7f14756d8d5cf9fd32f6d91f7ff)) - WITstudio
 
 ---
