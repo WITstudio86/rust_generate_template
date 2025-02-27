@@ -1,6 +1,6 @@
 [package]
-name = "cargo_generate_template"
-version = "0.3.2"
+name = ""
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 
