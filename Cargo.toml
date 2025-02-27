@@ -1,6 +1,6 @@
 [package]
 name = "cargo_generate_template"
-version = "0.1.5"
+version = "0.2.0"
 edition = "2021"
 license = "MIT"
 
@@ -118,5 +118,5 @@ sort_commits = "oldest"
 # cargo release use git cliff
 # use hook update changelog before push
 [package.metadata.release]
-pre-release-hook = "git cliff -o CHANGELOG.md"
+pre-release-hook = ["git", "cliff", "-o", "CHANGELOG.md"]
 
