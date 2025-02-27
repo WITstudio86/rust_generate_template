@@ -3,6 +3,13 @@
 所有显著的变化将记录在此文件中。请参阅 [常规提交](https://www.conventionalcommits.org/) 规范以了解提交指南。
 
 ---
+## [未发布]
+
+### Fix bug
+
+- 避免 github worklflow error with test - ([601e746](https://github.com/WITstudio86/rust_generate_template/commit/601e7469942ea7f14756d8d5cf9fd32f6d91f7ff)) - WITstudio
+
+---
 ## [0.1.5](https://github.com/WITstudio86/rust_generate_template/compare/v0.1.4..v0.1.5) - 2025-02-26
 
 ### Feat
