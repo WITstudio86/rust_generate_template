@@ -3,7 +3,7 @@
 所有显著的变化将记录在此文件中。请参阅 [常规提交](https://www.conventionalcommits.org/) 规范以了解提交指南。
 
 ---
-## [未发布]
+## [1.0.0](https://github.com/WITstudio86/rust_generate_template/compare/v0.3.2..v1.0.0) - 2025-03-07
 
 ### Feat
 
