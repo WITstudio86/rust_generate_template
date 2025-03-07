@@ -3,7 +3,7 @@
 所有显著的变化将记录在此文件中。请参阅 [常规提交](https://www.conventionalcommits.org/) 规范以了解提交指南。
 
 ---
-## [1.0.0](https://github.com/WITstudio86/rust_generate_template/compare/v0.3.2..v1.0.0) - 2025-03-07
+## [未发布]
 
 ### Feat
 
@@ -14,6 +14,9 @@
 - Merge pull request #1 from WITstudio86/userelease
 
 Userelease - ([4fc76bd](https://github.com/WITstudio86/rust_generate_template/commit/4fc76bdbfa43d729d3eb05c35f712db073feb1d9)) - 武泽献
+- Update Cargo.toml - ([3eab742](https://github.com/WITstudio86/rust_generate_template/commit/3eab74210327efb25f703a4250eb8f85f30d5490)) - 武泽献
+- Update Cargo.toml - ([5124d63](https://github.com/WITstudio86/rust_generate_template/commit/5124d63f4d499ba1b39e6c624283372f2d7a3aca)) - 武泽献
+- Update Makefile.toml - ([59ed818](https://github.com/WITstudio86/rust_generate_template/commit/59ed818ea5b19585a5370f43d98e7e8f85175dab)) - 武泽献
 
 ---
 ## [0.3.2](https://github.com/WITstudio86/rust_generate_template/compare/v0.3.1..v0.3.2) - 2025-02-27
