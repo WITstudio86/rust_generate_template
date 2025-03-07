@@ -1,6 +1,11 @@
 [package]
+<<<<<<< HEAD
 name = "cargo_generate_template"
 version = "2.0.0"
+=======
+name = ""
+version = "0.1.0"
+>>>>>>> 59ed818ea5b19585a5370f43d98e7e8f85175dab
 edition = "2021"
 license = "MIT"
 

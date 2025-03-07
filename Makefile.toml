@@ -109,3 +109,16 @@ dependencies = [
     "releasemajor",
     "addchange"
 ]
+
+# 直接 push
+[tasks.releasepush]
+install_crate="cargo-release"
+command = "cargo"
+args = ["release", "--no-publish", "--execute"]
+# dependencies = ["gitcommit"]
+
+[tasks.push]
+dependencies = [
+    "releasepush",
+    "addchange"
+]
