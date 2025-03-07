@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "cargo_generate_template"
-version = "2.0.0"
+name = "temp"
+version = "0.1.0"
