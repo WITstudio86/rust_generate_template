@@ -69,22 +69,43 @@ dependencies = [
 
 # cargo release
 # 小版本发布 
-[tasks.patch]
+[tasks.releasepatch]
 install_crate="cargo-release"
 command = "cargo"
 args = ["release" , "patch" , "--no-publish", "--execute"]
 # dependencies = ["gitcommit"]
 
+# cargo release
+# 小版本发布 
+[tasks.patch]
+dependencies = [
+    "releasepatch",
+    "addchange"
+]
+
 # 中版本发布 
-[tasks.minor]
+[tasks.releaseminor]
 install_crate="cargo-release"
 command = "cargo"
 args = ["release" , "minor" , "--no-publish", "--execute"]
 # dependencies = ["gitcommit"]
 
-# 大版本发布
-[tasks.major]
+# 中版本发布 
+[tasks.minor]
+dependencies = [
+    "releaseminor",
+    "addchange"
+]
+
+[tasks.releasemajor]
 install_crate="cargo-release"
 command = "cargo"
 args = ["release" , "major" , "--no-publish", "--execute"]
 # dependencies = ["gitcommit"]
+
+# 大版本发布
+[tasks.major]
+dependencies = [
+    "releasemajor",
+    "addchange"
+]
