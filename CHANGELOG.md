@@ -5,6 +5,19 @@
 ---
 ## [未发布]
 
+### Feat
+
+- auto generate changelog after make push - ([f756293](https://github.com/WITstudio86/rust_generate_template/commit/f75629361c177820eac10fa7c8606d6dfc523874)) - WITstudio
+
+### Others
+
+- Merge pull request #1 from WITstudio86/userelease
+
+Userelease - ([4fc76bd](https://github.com/WITstudio86/rust_generate_template/commit/4fc76bdbfa43d729d3eb05c35f712db073feb1d9)) - 武泽献
+
+---
+## [0.3.2](https://github.com/WITstudio86/rust_generate_template/compare/v0.3.1..v0.3.2) - 2025-02-27
+
 ### Fix bug
 
 - 修复 execute tests error - ([e5cdcc1](https://github.com/WITstudio86/rust_generate_template/commit/e5cdcc1f9d9e6d75a94cdcbbf1fce9aee91e7e94)) - WITstudio
